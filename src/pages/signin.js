@@ -1,11 +1,7 @@
-import React from 'react'
-import Verifyemail from '../components/Verifyemail/Verifyemail'
-
+import React from "react";
 
 const signin = () => {
-  return (
-    <div>signin</div>
-  )
-}
+  return <div>signin</div>;
+};
 
-export default signin
+export default signin;

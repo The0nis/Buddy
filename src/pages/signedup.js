@@ -1,15 +1,15 @@
 import React from "react";
-import Verifyemail from "../components/Verifyemail/Verifyemail";
+import Signedup from "../components/Signedup/Signedup";
 import PageWrap from "../components/PageWrap/Index";
 
-const emailverified = () => {
+function signedup() {
   return (
     <PageWrap>
       <div type="no help">
-        <Verifyemail />
+        <Signedup />
       </div>
     </PageWrap>
   );
-};
+}
 
-export default emailverified;
+export default signedup;
