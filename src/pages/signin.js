@@ -1,18 +1,8 @@
 import React from "react";
-import Signedup from "../components/Signedup/Signedup";
+import Signupscreen from "../components/Signupscreen/Signupscreen";
 
 const signin = () => {
-  return (
-<<<<<<< HEAD
-    <div>
-      <Signedup />
-    </div>
-  );
+  return <div>Signupscreen</div>;
 };
-=======
-    <div>signin</div>
-  )
-}
->>>>>>> 5748cc316ecbb42c6d6e6138a6ee8f18e8c72d76
 
 export default signin;
