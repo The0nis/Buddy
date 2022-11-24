@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Signin from "./pages/signin";
-import Signup from "./pages/singup";
+import Signup from "./pages/signup";
 import Dashboard from "./pages/dashboard";
 import Emailverified from "./pages/emailverified";
 import Otp from "./pages/otp";
