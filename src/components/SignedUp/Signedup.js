@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Signedup.module.scss";
 import box from "../../assets/box.svg";
 
-function Signedup() {
+function SignedUp() {
   return (
     <div className={style.container}>
       <img src={box} />
@@ -20,4 +20,4 @@ function Signedup() {
   );
 }
 
-export default Signedup;
+export default SignedUp;
