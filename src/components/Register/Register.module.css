@@ -1,0 +1,138 @@
+body{
+    background-color: #F8FAFC;
+}
+/* To be remove later */
+.wrapper{
+    padding: 40px 40px;
+}
+/* ................ */
+
+
+.wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: calc(45vw - 80px);
+    background-color: white;
+    padding: 1.5rem 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+.header h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    color: #1D1D18;
+}
+
+.header p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.fielda{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+   
+}
+
+.namefield, .fieldb{
+    border: 2px solid #DDE2E4;
+    height: 1.7rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    padding-left: .8rem;
+}
+
+.namefield input{
+    border: none;
+}
+
+.namefield input:focus{
+    outline: none; 
+}
+
+.icona{
+    margin-top: .3rem;
+}
+
+.fieldb{
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fieldb input{
+    border: none;
+    margin-top: .2rem;
+}
+
+.fieldb input:focus{
+    outline: none;
+}
+
+.icons{
+    margin-top: .2rem;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    width: 100%;
+    height: 2rem;
+    padding: .4rem 0;
+    border: none;
+    border-color: #ECEDED;
+    border-radius: 2pc;
+    color: #C3C7CE;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    }
+
+.btn:hover, .btn:focus{
+    background-color: #FF8600;
+    color: #ECEDED;
+    transform: scaleX(60deg);
+    border: none;
+}
+
+.terms{
+    margin-top: 2rem;
+}
+
+.terms p{
+    color: #84919A;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.changetxt{
+    color: #FF8600;
+    cursor: pointer;
+}
+
+
+.footer{
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    color: #FF8600;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+

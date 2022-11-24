@@ -1,0 +1,94 @@
+body{
+    background-color: #F8FAFC;
+}
+/* To be remove later */
+.wrapper{
+    padding: 40px 40px;
+}
+/* ................ */
+
+
+.wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: calc(45vw - 40px);
+    background-color: white;
+    padding: 1.5rem 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+.content h2{
+    letter-spacing: -0.011em;
+    color: #1D1D18;
+    font-weight: 700;
+
+}
+
+.content p{
+    color: #5B6871;
+    letter-spacing: -0.0045em;
+    font-weight: 500;
+    line-height: 1.5rem;
+
+}
+
+.changetxt{
+    color: #FF8600;
+}
+
+.getotp {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.getotp input{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #5B6871;
+    text-align: center;
+    font-weight: 700;
+}
+
+.getotp input:focus{
+    border: 1px solid #FF8600;
+    outline: 2px solid #FF8600;;
+
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    padding: .4rem 0;
+    border: none;
+    background-color: #FF8600;
+    color: #ECEDED;
+    border-radius: 2pc;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    }
+
+.btn:hover, .btn:focus{
+    transform: skewX(2);
+    background-color: #3a2103;
+    border: none;
+}
+
+.footer{
+    display: flex;
+    gap: 1rem;
+}
+
+a{
+    color: #FF8600;
+    text-decoration: none;
+}
+
+.right{
+    margin-top: 1.23rem;
+}
+
