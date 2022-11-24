@@ -1,8 +1,11 @@
 import React from 'react'
+import PageWrap from '../components/PageWrap/Index'
 
 const signin = () => {
   return (
-    <div>signin</div>
+    <PageWrap>
+        <div>signin</div>
+    </PageWrap>
   )
 }
 
