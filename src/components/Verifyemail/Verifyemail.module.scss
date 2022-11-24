@@ -3,17 +3,15 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
   border: 1px solid #dde2e4;
   box-shadow: 10px 50px 50px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
-  width: 489px;
-  padding-top: 80px;
-  padding-bottom: 73px;
-  padding-right: 87px;
-  padding-left: 84px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 text {
@@ -25,31 +23,29 @@ h1 {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 24px;
   text-align: center;
   letter-spacing: -0.011em;
-  padding-bottom: 12px;
+  padding-bottom: 1.2rem;
 }
 
 h2 {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 19px;
-  height: 38px;
   text-align: center;
   letter-spacing: -0.0045em;
-  padding-bottom: 50px;
+  padding-bottom: 3.2rem;
 }
 .btn {
-  height: 30px;
   background-color: #ff8600;
   color: white;
   border: none;
-  width: 4rem;
-  font-size: 8px;
+  padding: 0.8rem 5.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 24px;
 
