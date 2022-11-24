@@ -1,22 +1,10 @@
-body{
-    background-color: #F8FAFC;
-}
-/* To be remove later */
-.wrapper{
-    padding: 40px 40px;
-}
-/* ................ */
-
 
 .wrapper{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: calc(45vw - 80px);
     background-color: white;
     padding: 1.5rem 20px;
-    font-family: 'Mulish';
-    font-style: normal;
 }
 
 .header h3{
@@ -25,33 +13,47 @@ body{
     line-height: 24px;
     letter-spacing: -0.011em;
     color: #1D1D18;
+    padding: 2rem 0;
 }
 
 .header p{
     font-weight: 400;
     font-size: 13px;
     line-height: 19px;
+    padding-bottom: 2rem;
+}
+field{
+    width: 100%;
 }
 
 .fielda{
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    position: relative;
+
    
 }
 
+/* .namefield{
+    width: -20px;
+} */
+
 .namefield, .fieldb{
     border: 2px solid #DDE2E4;
-    height: 1.7rem;
+    height: 3rem;
     border-radius: 5px;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    padding-left: .8rem;
+    padding-left: .4rem;
 }
 
 .namefield input{
     border: none;
+    width: 12rem;
+    padding-left: 1rem;
 }
 
 .namefield input:focus{
@@ -59,7 +61,8 @@ body{
 }
 
 .icona{
-    margin-top: .3rem;
+    margin-top: .4rem;
+    font-size: 1.5rem;
 }
 
 .fieldb{
@@ -71,6 +74,7 @@ body{
 .fieldb input{
     border: none;
     margin-top: .2rem;
+    padding-left: 1rem;
 }
 
 .fieldb input:focus{
@@ -78,14 +82,14 @@ body{
 }
 
 .icons{
-    margin-top: .2rem;
+    margin-top: .3rem;
+    font-size: 1.5rem;
 }
-
 
 .btn{
     margin-top: 1rem;
     width: 100%;
-    height: 2rem;
+    height: 2.5rem;
     padding: .4rem 0;
     border: none;
     border-color: #ECEDED;
@@ -103,13 +107,14 @@ body{
 }
 
 .terms{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .terms p{
     color: #84919A;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
 .changetxt{
@@ -117,15 +122,27 @@ body{
     cursor: pointer;
 }
 
+.pointer{
+    font-size: 1.2rem;
+}
+
+
+
 
 .footer{
     display: flex;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 a{
     color: #FF8600;
     text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+a:hover{
+    font-weight: 700;
 }
 
 

@@ -4,6 +4,7 @@ import Signup from "./pages/singup";
 import Dashboard from "./pages/dashboard";
 import Emailverified from "./pages/emailverified";
 import Otp from "./pages/otp";
+import Registeration from "./pages/register";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Signin />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="register" element={<Registeration />} />
         <Route path="otp" element={<Otp />} />
         <Route path="emailverified" element={<Emailverified />} />
         <Route path="dashboard" element={<Dashboard />} />
