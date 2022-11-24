@@ -4,6 +4,8 @@ import checkbox from "../../assets/Checkbox.svg";
 import quote from "../../assets/comment.svg";
 
 const PageWrap = ({ children }) => {
+  const type = children.props.type;
+
   return (
     <div className={`${style.pagecontainer} container`}>
       <div className={style.onboarding_left}>
@@ -40,10 +42,12 @@ const PageWrap = ({ children }) => {
       <div className={style.onboarding_right}>
         <div className={style.onboarding_right__content}>
           {children}
-          <button>
-            Get Help
-            <img src={quote} alt="quote" />
-          </button>
+          {type !== "no help" && (
+            <button className={style.btn}>
+              Get Help
+              <img src={quote} alt="quote" />
+            </button>
+          )}
         </div>
       </div>
     </div>

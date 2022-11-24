@@ -1,11 +1,10 @@
 import React from 'react'
-import PageWrap from '../components/PageWrap/Index'
+import Verifyemail from '../components/Verifyemail/Verifyemail'
+
 
 const signin = () => {
   return (
-    <PageWrap>
-        <div>signin</div>
-    </PageWrap>
+    <div>Signin</div>
   )
 }
 
