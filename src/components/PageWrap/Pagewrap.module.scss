@@ -3,10 +3,19 @@
   grid-template-columns: 50% 50%;
   height: 100vh;
 
+  @media (max-width: 65em) {
+    grid-template-columns: 100%;
+  }
+
   .onboarding_left {
     padding: 0 11.3rem;
     width: 100%;
     padding-top: 7rem;
+    background-color: #fff;
+
+    @media (max-width: 65em) {
+      display: none;
+    }
 
     &__list {
       max-width: 44rem;
@@ -43,6 +52,9 @@
     background-color: #f8fafc;
     padding: 0 11rem;
     padding-bottom: 2rem;
+    @media (max-width: 65em) {
+      padding: 0 5rem;
+    }
 
     &__content {
       position: relative;
