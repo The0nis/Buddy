@@ -1,5 +1,5 @@
 import React from "react";
-import Signupscreen from "../components/Signupscreen/Signupscreen";
+import Signupscreen from "../components/Signupscreen/Index";
 
 const signin = () => {
   return <div>Signupscreen</div>;
