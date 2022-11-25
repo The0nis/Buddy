@@ -22,68 +22,71 @@
     line-height: 19px;
     padding-bottom: 2rem;
 }
-field{
-    width: 100%;
-}
 
-.fielda{
+/* .fielda{
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: nowrap;
     position: relative;
-
-   
-}
-
-/* .namefield{
-    width: -20px;
 } */
 
+.fielda{
+   display: grid;
+   grid-template-columns:  1fr 1fr;
+   align-content: left;
+   justify-content: right;
+   gap: 2rem;
+
+}
+
 .namefield, .fieldb{
-    border: 2px solid #DDE2E4;
+    border: 1px solid #DDE2E4;
     height: 3rem;
     border-radius: 5px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     position: relative;
-    padding-left: .4rem;
 }
 
 .namefield input{
-    border: none;
-    width: 12rem;
-    padding-left: 1rem;
+    border: transparent;
+    max-width: 10rem;
+    
 }
 
 .namefield input:focus{
-    outline: none; 
+    outline: transparent; 
+    
 }
 
 .icona{
     margin-top: .4rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #84919A;
 }
 
 .fieldb{
-    justify-content: flex-end;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .fieldb input{
     border: none;
     margin-top: .2rem;
-    padding-left: 1rem;
+    color: #84919A;
+    height: 2rem;
 }
 
 .fieldb input:focus{
-    outline: none;
+    outline: transparent;
 }
 
 .icons{
     margin-top: .3rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #84919A;
 }
 
 .btn{
@@ -103,18 +106,21 @@ field{
     background-color: #FF8600;
     color: #ECEDED;
     transform: scaleX(60deg);
-    border: none;
+    border: transparent;
 }
 
 .terms{
     margin-top: 3rem;
 }
 
+label{
+    color: #84919A;
+}
 .terms p{
     color: #84919A;
     font-weight: 400;
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .changetxt{
@@ -123,9 +129,13 @@ field{
 }
 
 .pointer{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
+.err{
+    color: red;
+    position: absolute;
+}
 
 
 
@@ -143,6 +153,60 @@ a{
 
 a:hover{
     font-weight: 700;
+}
+
+.firstname{
+    position: absolute;
+    margin-top: -1.5rem;
+    font-size: 1.2rem;
+}
+
+.lastname{
+    position: absolute;
+    margin-top: -1.5rem;
+    font-size: 1.2rem;
+    right: 2rem;
+}
+
+.email{
+    position: absolute;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+.password{
+    position: absolute;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: -1.5rem;
+
+}
+
+Label{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 62em) {
+
+    .fielda{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .lastname{
+        position: absolute;
+        left: 2rem;
+        margin-top: 3.5rem;
+    }
+
+    
+       
+   
+    
 }
 
 

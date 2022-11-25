@@ -4,24 +4,32 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: white;
+    width: 100%;
 }
 
-.content h2{
+.wrapperd{
+    width: calc(100% - 10rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content h3{
     color: #1D1D18;
     font-weight: 700;
-    font-size: 2rem;
-    margin-top: 2rem;
-    margin-left: -15rem;
+    font-size: 3rem;
+    margin: 4rem 0;
 
 }
 
 .content p{
     color: #5B6871;
     letter-spacing: -0.0045em;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 3rem;
     margin-top: -2rem;
-    margin-left: 2.5rem;
 }
 
 .changetxt{
@@ -29,16 +37,16 @@
 }
 
 .getotp {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1.5rem;
-    margin-left: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
     margin-top: 2rem;
+    overflow-wrap: normal;
 }
 
 .getotp input{
-    width: 3rem;
-    height: 3rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 10px;
     border: 1px solid #5B6871;
     text-align: center;
@@ -56,22 +64,24 @@
 }
 
 .entered p{
-    font-size: 1.3rem;
+    font-size:  2rem;
 }
 
 .btn{
     margin-top: 1rem;
-    width: 10rem;
-    height: 2rem;
+    width: 20rem;
+    height: 5rem;
     padding: .5rem 0;
-    margin-left: 2.5rem;
     border: none;
     background-color: #FF8600;
     color: #ECEDED;
-    border-radius: 2pc;
+    border-radius: 5px;
     cursor: pointer;
     transition: all .3s ease-in-out;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
     }
 
 .btn:hover, .btn:focus{
@@ -82,9 +92,10 @@
 
 .footer{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
 
 a{
@@ -95,4 +106,51 @@ a{
 .right{
     margin-top: -1.8rem;
 }
+
+@media (max-width: 32rem) {
+    .left{
+        display: none;
+    }
+
+     .getotp input{
+        width: 3.5rem;
+        height: 3.5em;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .content p{
+        overflow-wrap: break-word;
+    }
+
+    .btn{
+       
+        width: 10rem;
+        font-size: 1.2rem;
+        height: 3rem;
+        align-content: center;
+        
+        }
+    
+}
+
+
+@media (min-width: 62rem) {
+ 
+     .getotp input{
+        width: 4rem;
+        height: 4rem;
+    }
+    
+}
+
+@media (min-width: 62rem) {
+ 
+     .getotp input{
+        width: 4rem;
+        height: 4rem;
+    }
+    
+}
+
+
 

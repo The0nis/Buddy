@@ -20,7 +20,8 @@ const Otp = () => {
   return (
     <>
       <div className={style.content}>
-        <h2>Verify your email</h2>
+        <div className={style.wrapperd}>
+        <h3>Verify your email</h3>
         <p>
           A four digit OTP code has been sent to your email{" "}
           <span className={style.changetxt}>{userid}</span>
@@ -51,7 +52,7 @@ const Otp = () => {
             className={style.btn}
             onClick={(e) => alert("Entered OTP is " + otp.join(""))}
           >
-            Confirm
+            Confirm code
           </button>
         </div>
 
@@ -63,6 +64,7 @@ const Otp = () => {
           <div className={style.right}>
             <Link>Resend</Link>
           </div>
+        </div>
         </div>
       </div>
     </>
