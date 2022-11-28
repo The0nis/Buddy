@@ -113,8 +113,8 @@ a{
     }
 
      .getotp input{
-        width: 3.5rem;
-        height: 3.5em;
+         width: 3.5rem;
+         height: 3.5em;
         border-radius: 10px;
         font-weight: 700;
     }
@@ -124,10 +124,10 @@ a{
 
     .btn{
        
+        align-content: center;
         width: 10rem;
         font-size: 1.2rem;
         height: 3rem;
-        align-content: center;
         
         }
     
