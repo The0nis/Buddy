@@ -1,4 +1,4 @@
-import RightSideBar from "./RightSideBar";
+import RightSideBar from "../components/RightSideBar/Index";
 //import styles from "./Styles/dashboard.module.scss";
 
 const dashboard = () => {
@@ -7,7 +7,6 @@ const dashboard = () => {
       {/* <SideNav />
       <Main />
       <RightSideBar /> */}
-
         <RightSideBar />
     </div>
   );
