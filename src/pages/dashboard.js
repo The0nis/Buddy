@@ -1,4 +1,5 @@
-import styles from "./Styles/dashboard.module.scss";
+import RightSideBar from "./RightSideBar";
+//import styles from "./Styles/dashboard.module.scss";
 
 const dashboard = () => {
   return (
