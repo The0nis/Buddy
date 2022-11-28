@@ -1,7 +1,13 @@
-import styles from './Styles/dashboard.module.scss';
+import styles from "./Styles/dashboard.module.scss";
 
 const dashboard = () => {
-  return <div>dashboard</div>;
+  return (
+    <div>
+      {/* <SideNav />
+      <Main />
+      <RightSideBar /> */}
+    </div>
+  );
 };
 
 export default dashboard;
