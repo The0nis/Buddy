@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./signupscreen.module.scss";
+import style from "./Signupscreen.module.scss";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";

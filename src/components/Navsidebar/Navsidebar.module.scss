@@ -65,12 +65,12 @@ a:active {
   padding-bottom: 2rem;
 }
 
-h1 {
+wrapper > h1 {
   color: black;
   font-size: smaller;
 }
 
-p {
+.wrapper > p {
   text-align: center;
   color: grey;
   padding-bottom: 12px;

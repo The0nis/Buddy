@@ -9,7 +9,7 @@ import analytics from "../../assets/analytics.svg";
 import milly from "..//../assets/milly.svg";
 import logout from "..//../assets/logout.svg";
 
-const Index = () => {
+const navsidebar = () => {
   return (
     <div className={style.container}>
       <div className={style.buddylogo}>
@@ -54,7 +54,7 @@ const Index = () => {
           <div className={style.wrapper}>
             <center>
               {" "}
-              <img src={milly} alt="logo"  className={style.image}/>{" "}
+              <img src={milly} alt="logo" className={style.image} />{" "}
             </center>
             <h1>Theresa milly</h1>
             <p>Influencer</p>
@@ -72,4 +72,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default navsidebar;
