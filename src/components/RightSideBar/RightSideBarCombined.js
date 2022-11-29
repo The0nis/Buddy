@@ -1,12 +1,11 @@
 import React from 'react'
 
-const RightSideBar = () => {
+const RightSideBarCombined = () => {
   return (
     <div>
-
         
     </div>
   )
 }
 
-export default RightSideBar
+export default RightSideBarCombined

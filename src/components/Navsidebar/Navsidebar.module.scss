@@ -1,0 +1,93 @@
+body {
+  background-color: #e6e6e7;
+}
+.container {
+  width: 20rem;
+  color: white;
+  background-color: #f1f1f2;
+  height: 100vh;
+  position: fixed;
+}
+
+.buddylogo {
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 2rem;
+  // padding-bottom: 30rem;
+}
+
+.nav1 {
+  width: calc(100% - 5rem);
+  display: flex;
+  justify-content: center;
+  margin: 0 1.5rem;
+}
+
+ul.nav {
+  font-size: 1.5rem;
+  padding-bottom: 40px;
+}
+
+ul li {
+  padding-bottom: 40px;
+  list-style-type: none;
+}
+
+/* unvisited link */
+a:link {
+  color: orange;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  color: orange;
+}
+
+/* selected link */
+a:active {
+  color: orange;
+}
+
+.footer {
+  background-color: white;
+  display: flex;
+  position: relative;
+  width: calc(100% - 3rem);
+  justify-content: center;
+  margin-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  color: black;
+  font-size: smaller;
+}
+
+p {
+  text-align: center;
+  color: grey;
+  padding-bottom: 12px;
+}
+
+.btn {
+  background-color: rgba(255, 134, 0, 0.16);
+  color: #ff8600;
+  border: none;
+  padding: 0.8rem 5.1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin: 0;
+  border-radius: 6px;
+}
+
+.image {
+  margin-top: -3rem;
+}
