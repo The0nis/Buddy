@@ -1,0 +1,11 @@
+.dashboard {
+  display: flex;
+  &__main {
+    .main__top_nav {
+    }
+
+    .main__content_area {
+      display: flex;
+    }
+  }
+}

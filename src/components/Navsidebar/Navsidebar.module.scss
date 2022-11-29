@@ -1,12 +1,9 @@
-body {
-  background-color: #e6e6e7;
-}
 .container {
   width: 20rem;
   color: white;
-  background-color: #f1f1f2;
-  height: 100vh;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .buddylogo {
@@ -16,6 +13,9 @@ body {
   align-content: center;
   margin-top: 2rem;
   // padding-bottom: 30rem;
+}
+
+.topnav {
 }
 
 .nav1 {
