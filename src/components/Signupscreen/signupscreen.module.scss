@@ -1,4 +1,4 @@
-.container {
+.signcontainer {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -12,12 +12,12 @@
   border-radius: 8px;
 }
 
-.wrapper {
+.signwrapper {
   width: calc(100% - 10rem);
   margin: 3rem 0;
 }
 
-.header h3 {
+.signheader h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -26,11 +26,11 @@
   padding: 2rem 0;
 }
 
-field {
+.signfield {
   width: 100%;
 }
 
-.fielda {
+.signfielda {
   border: 2px solid #dde2e4;
   height: 3rem;
   border-radius: 5px;
@@ -41,7 +41,7 @@ field {
   align-items: center;
 }
 
-.namefield input {
+.signnamefield input {
   border: none;
   width: 12rem;
   padding-left: 1rem;
@@ -53,67 +53,67 @@ field {
   //   text-align: center;
 }
 
-.namefield input:focus {
+.signnamefield input:focus {
   outline: none;
 }
 
-.fielda {
+.signfielda {
   justify-content: flex-end;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.fielda input {
+.signfielda input {
   border: none;
   margin-top: 0.2rem;
   padding-left: 1rem;
 }
 
-.fielda input:focus {
+.signfielda input:focus {
   outline: none;
 }
 
-.icons {
+.signicons {
   margin-top: 0.3rem;
   font-size: 1.5rem;
   align-items: center;
   align-self: center;
 }
 
-.line {
+.signline {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 2rem;
 }
 
-.linewid {
+.signlinewid {
   width: 20rem;
   height: 1px;
 }
 
-.terms {
+.signterms {
   margin-top: 3rem;
 }
 
-.terms p {
+.signterms p {
   color: #84919a;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
 }
 
-.changetxt {
+.signchangetxt {
   color: #ff8600;
   cursor: pointer;
 }
 
-.pointer {
+.signpointer {
   font-size: 1.2rem;
 }
 
-.footer {
+.signfooter {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
