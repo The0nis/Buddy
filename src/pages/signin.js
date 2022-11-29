@@ -1,10 +1,12 @@
 import React from "react";
-import Signupscreen from "../components/Signupscreen/Index";
+import Navsidebar from "../components/Navsidebar/Index";
 
 const signin = () => {
-  return <div>
-    <Signupscreen />
-  </div>;
+  return (
+    <div>
+      <Navsidebar />
+    </div>
+  );
 };
 
 export default signin;
