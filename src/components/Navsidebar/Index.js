@@ -43,23 +43,23 @@ const navsidebar = () => {
 
             <li>
               <img src={settings} alt="settings" />
-              <a href=""> Settings</a>
+              <a href="" className={style.direct}> Settings</a>
             </li>
           </ul>
         </nav>
       </div>
 
       <footer>
-        <div className={style.footer}>
-          <div className={style.wrapper}>
+        <div className={style.navsidefooter}>
+          <div className={style.navwrapper}>
             <center>
               {" "}
-              <img src={milly} alt="logo" className={style.image} />{" "}
+              <img src={milly} alt="logo" className={style.navimage} />{" "}
             </center>
             <h1>Theresa milly</h1>
             <p>Influencer</p>
             <center>
-              <button className={style.btn}>
+              <button className={style.navbtn}>
                 {" "}
                 <img src={logout} />
                 Logout
