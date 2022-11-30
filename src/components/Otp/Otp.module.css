@@ -5,6 +5,7 @@
     justify-content: flex-start;
     background-color: white;
     width: 100%;
+    border-radius: 1pc;
 }
 
 .wrapperd{
@@ -18,7 +19,7 @@
 .content h3{
     color: #1D1D18;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 4rem 0;
 
 }
@@ -26,9 +27,9 @@
 .content p{
     color: #5B6871;
     letter-spacing: -0.0045em;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 3rem;
+    line-height: 2.5rem;
     margin-top: -2rem;
 }
 
@@ -39,13 +40,13 @@
 .getotp {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: -1rem;
     margin-top: 2rem;
     overflow-wrap: normal;
 }
 
 .getotp input{
-    width: 7rem;
+    width: 6rem;
     height: 7rem;
     border-radius: 10px;
     border: 1px solid #5B6871;
@@ -64,13 +65,13 @@
 }
 
 .entered p{
-    font-size:  2rem;
+    font-size:  1.5rem;
 }
 
 .btn{
     margin-top: 1rem;
-    width: 20rem;
-    height: 5rem;
+    width: 19rem;
+    height: 4.2rem;
     padding: .5rem 0;
     border: none;
     background-color: #FF8600;
@@ -94,17 +95,18 @@
     display: flex;
     gap: 3rem;
     margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
 
-a{
+.right a{
     color: #FF8600;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .right{
-    margin-top: -1.8rem;
+    margin-top: -2.8rem;
 }
 
 @media (max-width: 32rem) {
@@ -116,7 +118,7 @@ a{
          width: 3.5rem;
          height: 3.5em;
         border-radius: 10px;
-        font-weight: 700;
+        font-weight: 600;
     }
     .content p{
         overflow-wrap: break-word;
@@ -126,7 +128,7 @@ a{
        
         align-content: center;
         width: 10rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         height: 3rem;
         
         }

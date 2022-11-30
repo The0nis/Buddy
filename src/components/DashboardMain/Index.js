@@ -2,6 +2,11 @@ import styles from "./Dashboardmain.module.scss";
 import circles from "../../assets/circle_layer.svg";
 import add_account from "../../assets/add_account.svg";
 import growth from "../../assets/growth.svg";
+import { AiFillHeart } from "react-icons/ai";
+import { BiCommentDetail } from "react-icons/bi";
+import { IoMdShareAlt } from "react-icons/io";
+import avatarpotential from "../../assets/avatar_potential.svg";
+import chartup from "../../assets/chartup.svg";
 
 const DashboardMain = () => {
   return (
@@ -59,16 +64,16 @@ const DashboardMain = () => {
             </p>
             <div className={styles.reactions}>
               <div className={styles.reactions__love}>
-                <img src="" alt="" />
+                <AiFillHeart />
                 <p>260</p>
               </div>
               <div className={styles.reactions__love}>
-                <img src="" alt="" />
-                <p>260</p>
+                <BiCommentDetail />
+                <p>234</p>
               </div>
               <div className={styles.reactions__love}>
-                <img src="" alt="" />
-                <p>260</p>
+                <IoMdShareAlt />
+                <p>123</p>
               </div>
             </div>
           </div>
@@ -80,16 +85,16 @@ const DashboardMain = () => {
             </p>
             <div className={styles.reactions}>
               <div className={styles.reactions__love}>
-                <img src="" alt="" />
+                <AiFillHeart />
                 <p>260</p>
               </div>
               <div className={styles.reactions__love}>
-                <img src="" alt="" />
-                <p>260</p>
+                <BiCommentDetail />
+                <p>234</p>
               </div>
               <div className={styles.reactions__love}>
-                <img src="" alt="" />
-                <p>260</p>
+                <IoMdShareAlt />
+                <p>123</p>
               </div>
             </div>
           </div>
@@ -97,6 +102,53 @@ const DashboardMain = () => {
       </div>
       <div className={styles.dashboardmain__members}>
         <h2>Potential Members</h2>
+        <div className={styles.membercards}>
+          <div className={styles.membercard}>
+            <img src={avatarpotential} alt="Wanda Parker" />
+            <h3>Wanda Parker</h3>
+            <p>@ashking1234</p>
+            <div className={styles.membercard__chart}>
+              <img src={chartup} alt="" />
+              <h4>10.3%</h4>
+            </div>
+          </div>
+          <div className={styles.membercard}>
+            <img src={avatarpotential} alt="Wanda Parker" />
+            <h3>Wanda Parker</h3>
+            <p>@ashking1234</p>
+            <div className={styles.membercard__chart}>
+              <img src={chartup} alt="" />
+              <h4>10.3%</h4>
+            </div>
+          </div>
+          <div className={styles.membercard}>
+            <img src={avatarpotential} alt="Wanda Parker" />
+            <h3>Wanda Parker</h3>
+            <p>@ashking1234</p>
+            <div className={styles.membercard__chart}>
+              <img src={chartup} alt="" />
+              <h4>10.3%</h4>
+            </div>
+          </div>
+          <div className={styles.membercard}>
+            <img src={avatarpotential} alt="Wanda Parker" />
+            <h3>Wanda Parker</h3>
+            <p>@ashking1234</p>
+            <div className={styles.membercard__chart}>
+              <img src={chartup} alt="" />
+              <h4>10.3%</h4>
+            </div>
+          </div>
+          <div className={styles.membercard}>
+            <img src={avatarpotential} alt="Wanda Parker" />
+            <h3>Wanda Parker</h3>
+            <p>@ashking1234</p>
+            <div className={styles.membercard__chart}>
+              <img src={chartup} alt="" />
+              <h4>10.3%</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

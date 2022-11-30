@@ -1,20 +1,20 @@
 import React from "react";
-import style from "./Signupscreen.module.scss";
+import style from "./signupscreen.module.scss";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Signupscreen() {
   return (
-    <div className={style.container}>
-      <div className={style.wrapper}>
+    <div className={style.signcontainer}>
+      <div className={style.signwrapper}>
         <form>
-          <div className={style.header}>
+          <div className={style.signheader}>
             <h3>Register your account</h3>
           </div>
 
-          <div className={style.field}>
-            <div className={style.fielda}>
+          <div className={style.signfield}>
+            <div className={style.signfielda}>
               <div>
                 <input
                   type="Email"
@@ -24,23 +24,23 @@ function Signupscreen() {
                 />
               </div>
               <div>
-                <AiOutlineMail className={style.icons} />
+                <AiOutlineMail className={style.signicons} />
               </div>
             </div>
 
-            <div className={style.line}>
-              <div className={style.linewid}>
+            <div className={style.signline}>
+              <div className={style.signlinewid}>
                 <hr />
               </div>
               <div>
                 <p>or</p>
               </div>
-              <div className={style.linewid}>
+              <div className={style.signlinewid}>
                 <hr />
               </div>
             </div>
 
-            <div className={style.fielda}>
+            <div className={style.signfielda}>
               <div>
                 <input
                   type="Password"
@@ -50,35 +50,35 @@ function Signupscreen() {
                 />
               </div>
               <div>
-                <FcGoogle className={style.icons} />
+                <FcGoogle className={style.signicons} />
               </div>
             </div>
           </div>
 
-          <div className={style.terms}>
+          <div className={style.signterms}>
             <p>
               By clicking the button above, you agree to our{" "}
-              <span className={style.changetxt}>
+              <span className={style.signchangetxt}>
                 <Link>
                   Terms <br></br>of Service
                 </Link>
               </span>{" "}
               and{" "}
-              <span className={style.changetxt}>
+              <span className={style.signchangetxt}>
                 <Link>Privacy Policy.</Link>
               </span>
             </p>
           </div>
         </form>
 
-        <div className={style.footer}>
+        <div className={style.signfooter}>
           <div>
             <p>Already have an account?</p>
           </div>
 
           <div>
             <p>
-              <Link to="/" className={style.pointer}>
+              <Link to="/" className={style.signpointer}>
                 Login
               </Link>
             </p>

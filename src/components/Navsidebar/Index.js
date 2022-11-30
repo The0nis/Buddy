@@ -9,7 +9,7 @@ import analytics from "../../assets/analytics.svg";
 import milly from "..//../assets/milly.svg";
 import logout from "..//../assets/logout.svg";
 
-const Index = () => {
+const navsidebar = () => {
   return (
     <div className={style.container}>
       <div className={style.topnav}>
@@ -46,24 +46,26 @@ const Index = () => {
 
               <li>
                 <img src={settings} alt="settings" />
-                <a href=""> Settings</a>
+                <a href="" className={style.direct}>
+                  {" "}
+                  Settings
+                </a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-
       <footer>
-        <div className={style.footer}>
-          <div className={style.wrapper}>
+        <div className={style.navsidefooter}>
+          <div className={style.navwrapper}>
             <center>
               {" "}
-              <img src={milly} alt="logo" className={style.image} />{" "}
+              <img src={milly} alt="logo" className={style.navimage} />{" "}
             </center>
             <h1>Theresa milly</h1>
             <p>Influencer</p>
             <center>
-              <button className={style.btn}>
+              <button className={style.navbtn}>
                 {" "}
                 <img src={logout} />
                 Logout
@@ -76,4 +78,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default navsidebar;

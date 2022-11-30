@@ -1,9 +1,10 @@
 .container {
-  width: 20rem;
+  // width: 20rem;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 2.4rem;
 }
 
 .buddylogo {
@@ -25,37 +26,37 @@
   margin: 0 1.5rem;
 }
 
-ul.nav {
+.nav {
   font-size: 1.5rem;
   padding-bottom: 40px;
 }
 
-ul li {
+.nav li {
   padding-bottom: 40px;
   list-style-type: none;
 }
 
 /* unvisited link */
-a:link {
+.direct:link {
   color: orange;
 }
 
 /* visited link */
-a:visited {
+.direct:visited {
   color: grey;
 }
 
 /* mouse over link */
-a:hover {
+.direct:hover {
   color: orange;
 }
 
 /* selected link */
-a:active {
+.direct:active {
   color: orange;
 }
 
-.footer {
+.navsidefooter {
   background-color: white;
   display: flex;
   position: relative;
@@ -65,18 +66,18 @@ a:active {
   padding-bottom: 2rem;
 }
 
-h1 {
+.navwrapper > h1 {
   color: black;
   font-size: smaller;
 }
 
-p {
+.navwrapper > p {
   text-align: center;
   color: grey;
   padding-bottom: 12px;
 }
 
-.btn {
+.navbtn {
   background-color: rgba(255, 134, 0, 0.16);
   color: #ff8600;
   border: none;
@@ -88,6 +89,6 @@ p {
   border-radius: 6px;
 }
 
-.image {
+.navimage {
   margin-top: -3rem;
 }
