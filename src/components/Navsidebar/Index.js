@@ -11,7 +11,7 @@ import logout from "..//../assets/logout.svg";
 
 const navsidebar = () => {
   return (
-    <div className={style.container}>
+    <div className={style.sidenav_container}>
       <div className={style.topnav}>
         <div className={style.buddylogo}>
           <center>
@@ -59,17 +59,16 @@ const navsidebar = () => {
         <div className={style.navsidefooter}>
           <div className={style.navwrapper}>
             <center>
-              {" "}
               <img src={milly} alt="logo" className={style.navimage} />{" "}
             </center>
+
             <h1>Theresa milly</h1>
             <p>Influencer</p>
             <center>
               <button className={style.navbtn}>
-                {" "}
-                <img src={logout} />
-                Logout
-              </button>{" "}
+                <img src={logout} alt="alt" />
+                <p>Logout</p>
+              </button>
             </center>
           </div>
         </div>

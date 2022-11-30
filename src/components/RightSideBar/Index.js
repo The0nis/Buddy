@@ -23,7 +23,7 @@ const RightSideBar = (props) => {
           </div>
         </div>
 
-        {/* <div className={style.watchtab}>
+        <div className={style.watchtab}>
           <Watchlist
             title={"AAPL"}
             image={arrowup}
@@ -39,7 +39,7 @@ const RightSideBar = (props) => {
             price={142.9}
             percent={-0.78}
           />
-        </div> */}
+        </div>
       </div>
 
       <div className={style.revsection}>

@@ -1,4 +1,5 @@
 import DashboardMain from "../components/DashboardMain/Index";
+import DashboardTopNav from "../components/DashboardTopNav/Index";
 import Index from "../components/Navsidebar/Index";
 // import RightSideBar from "./RightSideBar";
 import RightSideBar from "../components/RightSideBar/Index";
@@ -9,7 +10,9 @@ const dashboard = () => {
     <div className={styles.dashboard}>
       <Index />
       <div className={styles.dashboard__main}>
-        <div className={styles.main__top_nav}>{/* <DashboardTopNav /> */}</div>
+        <div className={styles.main__top_nav}>
+          <DashboardTopNav />
+        </div>
         <div className={styles.main__content_area}>
           <DashboardMain />
           <RightSideBar />

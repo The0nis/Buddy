@@ -7,6 +7,7 @@ import { BiCommentDetail } from "react-icons/bi";
 import { IoMdShareAlt } from "react-icons/io";
 import avatarpotential from "../../assets/avatar_potential.svg";
 import chartup from "../../assets/chartup.svg";
+import MyResponsiveBar from "./Barchart";
 
 const DashboardMain = () => {
   return (
@@ -51,6 +52,9 @@ const DashboardMain = () => {
               <p>Charles</p>
             </div>
           </div>
+        </div>
+        <div className={styles.chart}>
+          <MyResponsiveBar />
         </div>
       </div>
       <div className={styles.dashboardmain__trending}>
