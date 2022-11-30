@@ -4,7 +4,7 @@ import box from "../../assets/box.svg";
 
 function SignedUp() {
   return (
-    <div className={style.container}>
+    <div className={style.signcontainer}>
       <img src={box} />
       <h1>Check your Mailbox !</h1>
       <h2>
@@ -12,9 +12,9 @@ function SignedUp() {
         confirm your account. Check your <br></br> inbox to activate your
         account
       </h2>
-      <button className={style.btn}>Confirm Email</button>
-      <span className={style.id2}>
-        Didn't get the mail? <span className>Resend </span>{" "}
+      <button className={style.signbtn}>Confirm Email</button>
+      <span className={style.signid2}>
+        Didn't get the mail? <span className={style.spantext}>Resend </span>{" "}
       </span>
     </div>
   );

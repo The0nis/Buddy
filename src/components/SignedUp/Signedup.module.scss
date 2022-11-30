@@ -1,4 +1,4 @@
-.container {
+.signcontainer {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -15,11 +15,11 @@
   padding-left: 84px;
 }
 
-text {
+.text {
   text-align: center;
 }
 
-h1 {
+.signcontainer h1 {
   block-size: auto;
   font-family: "Mulish";
   font-style: normal;
@@ -31,7 +31,7 @@ h1 {
   padding-bottom: 12px;
 }
 
-h2 {
+.signcontainer h2 {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
@@ -40,9 +40,12 @@ h2 {
   text-align: center;
   letter-spacing: -0.0045em;
   padding-bottom: 21px;
+  color: #5B6871;
+  text-size-adjust: 23rem;
+  text-align: center;
 }
 
-.btn {
+.signbtn {
   height: 40px;
   background-color: #ff8600;
   color: white;
@@ -53,18 +56,20 @@ h2 {
   line-height: 24px;
   margin: 0;
   border-radius: 6px;
+  
 }
 
-span {
+.btn {
   padding-top: 38px;
   color: orange;
 }
 
-.id2 {
+.spantext{
+  color: orange;
+
+}
+.signid2 {
+  margin-top: 2rem;
   color: grey;
 }
-
-h2 {
-  text-size-adjust: 23rem;
-  text-align: center;
-}
+  
