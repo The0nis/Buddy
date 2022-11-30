@@ -6,6 +6,7 @@
     background-color: white;
     width: 100%;
     border-radius: 1pc;
+    border: 1px solid #dde2e4;
 }
 
 .wrapperd{
@@ -39,8 +40,10 @@
 
 .getotp {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: -1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.3rem;
+    display: flex;
+    gap: rem;
     margin-top: 2rem;
     overflow-wrap: normal;
 }

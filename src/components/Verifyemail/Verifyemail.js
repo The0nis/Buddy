@@ -5,9 +5,9 @@ import email from "../../assets/email.svg";
 const Verifyemail = () => {
   return (
     <div className={style.container}>
-      <img src={email} />
-      <h1>Email verified !</h1>
-      <h2>
+      <img src={email} alt="" />
+      <h1 className={style.Email}>Email verified !</h1>
+      <h2 className={style.emailtext}>
         The verified Email address will be associated with <br></br> your
         account. Click on the button below to continue
       </h2>

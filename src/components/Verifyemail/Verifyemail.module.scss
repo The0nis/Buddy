@@ -18,7 +18,7 @@ text {
   text-align: center;
 }
 
-h1 {
+h1.Email {
   block-size: auto;
   font-family: "Mulish";
   font-style: normal;
@@ -30,7 +30,7 @@ h1 {
   padding-bottom: 1.2rem;
 }
 
-h2 {
+.emailtext {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
@@ -39,7 +39,9 @@ h2 {
   text-align: center;
   letter-spacing: -0.0045em;
   padding-bottom: 3.2rem;
+  color: #5B6871;
 }
+
 .btn {
   background-color: #ff8600;
   color: white;
