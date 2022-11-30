@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./signupscreen.module.scss";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Signupscreen() {
+  const [show, setShow] = useState(false);
+  const [showme, setShowme] = useState(false);
+
+  const changeme = (event) => {
+    event.preventDefault();
+    setShow(!show);
+  };
+
+  const changegoogle = (event) => {
+    event.preventDefault();
+    setShowme(!showme);
+  };
+
   return (
     <div className={style.signcontainer}>
       <div className={style.signwrapper}>
@@ -15,17 +28,19 @@ function Signupscreen() {
 
           <div className={style.signfield}>
             <div className={style.signfielda}>
-              <div>
+              <div className={style.inputwrap} onClick={changeme}>
                 <input
                   type="Email"
-                  placeholder=" Sign up with Email"
+                  placeholder="Sign up with Email"
                   id="name"
                   minLength={1}
                 />
               </div>
-              <div>
-                <AiOutlineMail className={style.signicons} />
-              </div>
+              {!show && (
+                <div>
+                  <AiOutlineMail className={style.signicons} />
+                </div>
+              )}
             </div>
 
             <div className={style.signline}>
@@ -41,7 +56,7 @@ function Signupscreen() {
             </div>
 
             <div className={style.signfielda}>
-              <div>
+              <div className={style.inputwrap} onClick={changegoogle}>
                 <input
                   type="Password"
                   placeholder="Sign up with Google"
@@ -49,9 +64,11 @@ function Signupscreen() {
                   minLength={1}
                 />
               </div>
-              <div>
-                <FcGoogle className={style.signicons} />
-              </div>
+              {!showme && (
+                <div>
+                  <FcGoogle className={style.signicons} />
+                </div>
+              )}
             </div>
           </div>
 
