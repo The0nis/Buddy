@@ -1,5 +1,5 @@
 import React from "react";
-import SignedUp from "../components/SignedUp/Signedup";
+import SignedUp from "../components/Signedup/Signedup";
 import PageWrap from "../components/PageWrap/Index";
 
 function signedup() {
