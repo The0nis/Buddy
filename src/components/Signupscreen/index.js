@@ -10,7 +10,7 @@ function Signupscreen() {
       <div className={style.wrapper}>
         <form>
           <div className={style.header}>
-            <h3>Register your account</h3>
+            <h3>Register your Account</h3>
           </div>
 
           <div className={style.field}>
