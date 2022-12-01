@@ -5,19 +5,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Signupscreen() {
-  const [show, setShow] = useState(false);
-  const [showme, setShowme] = useState(false);
-
-  const changeme = (event) => {
-    event.preventDefault();
-    setShow(!show);
-  };
-
-  const changegoogle = (event) => {
-    event.preventDefault();
-    setShowme(!showme);
-  };
-
   return (
     <div className={style.signcontainer}>
       <div className={style.signwrapper}>
@@ -28,19 +15,19 @@ function Signupscreen() {
 
           <div className={style.signfield}>
             <div className={style.signfielda}>
-              <div className={style.inputwrap} onClick={changeme}>
-                <input
-                  type="Email"
-                  placeholder="Sign up with Email"
-                  id="name"
-                  minLength={1}
-                />
-              </div>
-              {!show && (
-                <div>
+              <div className={style.inputwrap}>
+                <button
+                  style={{
+                    width: "100%",
+                    backgroundColor: "transparent",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
                   <AiOutlineMail className={style.signicons} />
-                </div>
-              )}
+                  Sign up with Email
+                </button>
+              </div>
             </div>
 
             <div className={style.signline}>
@@ -54,21 +41,22 @@ function Signupscreen() {
                 <hr />
               </div>
             </div>
-
-            <div className={style.signfielda}>
-              <div className={style.inputwrap} onClick={changegoogle}>
-                <input
-                  type="Password"
-                  placeholder="Sign up with Google"
-                  id="name"
-                  minLength={1}
-                />
-              </div>
-              {!showme && (
-                <div>
-                  <FcGoogle className={style.signicons} />
+            <div className={style.signfield}>
+              <div className={style.signfielda}>
+                <div className={style.inputwrap}>
+                  <button
+                    style={{
+                      width: "100%",
+                      backgroundColor: "transparent",
+                      border: "none",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <FcGoogle className={style.signicons} />
+                    Sign up with Google
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
           </div>
 
