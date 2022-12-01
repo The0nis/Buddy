@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 25rem auto;
   @media (max-width: 68em) {
+    display: block;
     grid-template-columns: 10rem auto;
     grid-template-columns: auto;
   }
