@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Navsidebar.module.scss";
 import logo from "../../assets/logo.svg";
 import myportfolio from "../../assets/myportfolio.svg";
@@ -8,8 +8,16 @@ import settings from "../../assets/settings.svg";
 import analytics from "../../assets/analytics.svg";
 import milly from "..//../assets/milly.svg";
 import logout from "..//../assets/logout.svg";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 
-const navsidebar = () => {
+const Navsidebar = () => {
+  const [active, setActive] = useState(false);
+
+  //ROUTER
+  const url = useLocation().pathname;
+
+  console.log(url);
+
   return (
     <div className={style.sidenav_container}>
       <div className={style.topnav}>
@@ -24,36 +32,63 @@ const navsidebar = () => {
           <br></br>
           <nav className={style.nav1}>
             <ul className={style.nav}>
-              <li>
-                <img src={myportfolio} alt="my portfolio" />
-                <a href=""> My Portfolio</a>
-              </li>
-
-              <li>
-                <img src={mygroup} alt="my group" />
-                <a href=""> My Group</a>
-              </li>
-
-              <li>
-                <img src={analytics} alt="analytics" />
-                <a href=""> My Analytics</a>
-              </li>
-
-              <li>
-                <img src={pack} alt="pack" />
-                <a href=""> Pack</a>
-              </li>
-
-              <li>
-                <img src={settings} alt="settings" />
-                <a href="" className={style.direct}>
-                  {" "}
-                  Settings
-                </a>
-              </li>
+              <NavLink
+                to="/dashboard"
+                className={url == "/dashboard" ? `${style.active}` : ""}
+              >
+                <li>
+                  <img src={myportfolio} alt="my portfolio" />
+                  <p> My Portfolio</p>
+                </li>
+              </NavLink>
+              <NavLink
+                to="mygroup"
+                className={(navData) =>
+                  navData.isActive ? `${style.active}` : ""
+                }
+              >
+                <li>
+                  <img src={mygroup} alt="my group" />
+                  <p> My Group</p>
+                </li>
+              </NavLink>
+              <NavLink
+                to="analytics"
+                className={(navData) =>
+                  navData.isActive ? `${style.active}` : ""
+                }
+              >
+                <li>
+                  <img src={analytics} alt="analytics" />
+                  <p> My Analytics</p>
+                </li>
+              </NavLink>
+              <NavLink
+                to="pack"
+                className={(navData) =>
+                  navData.isActive ? `${style.active}` : ""
+                }
+              >
+                <li>
+                  <img src={pack} alt="pack" />
+                  <p> Pack</p>
+                </li>
+              </NavLink>
+              <NavLink
+                to="settings"
+                className={(navData) =>
+                  navData.isActive ? `${style.active}` : ""
+                }
+              >
+                <li>
+                  <img src={settings} alt="settings" />
+                  <p> Settings</p>
+                </li>
+              </NavLink>
             </ul>
           </nav>
         </div>
+        <Outlet />
       </div>
       <footer>
         <div className={style.navsidefooter}>
@@ -62,7 +97,7 @@ const navsidebar = () => {
               <img src={milly} alt="logo" className={style.navimage} />{" "}
             </center>
 
-            <h1>Theresa milly</h1>
+            <h3>Theresa milly</h3>
             <p>Influencer</p>
             <center>
               <button className={style.navbtn}>
@@ -77,4 +112,4 @@ const navsidebar = () => {
   );
 };
 
-export default navsidebar;
+export default Navsidebar;
