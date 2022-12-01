@@ -91,7 +91,6 @@
   // justify-self: center;
 }
 
-
 .signline {
   display: flex;
   align-items: baseline;
@@ -142,3 +141,8 @@ a:hover {
 }
 
 // ghghfhgfhghg
+@media (max-width: 65em) {
+  .signicons{
+    display: none;
+  }
+}
