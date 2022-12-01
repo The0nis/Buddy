@@ -6,13 +6,46 @@
     grid-template-columns: 10rem auto;
     grid-template-columns: auto;
   }
+
+  &__sidenav {
+    // display: none;
+    // transform: translate(-50px);
+    .navbar {
+      position: relative;
+      z-index: 100;
+      position: fixed;
+    }
+
+    .hide {
+      transform: translateX(-120px);
+      transition: all 1s ease;
+    }
+
+    .show {
+      transform: translateX(0px);
+      transition: all 1s ease;
+    }
+
+    .toggle {
+      position: absolute;
+      top: 13px;
+      left: 110px;
+    }
+
+    .toggle_position {
+      top: 10px;
+      left: 20px;
+    }
+  }
+
   &__main {
     padding-left: 3.2rem;
     padding-right: 2.4rem;
     background-color: #f5f5f5;
 
     @media (max-width: 68em) {
-      // margin-left: 10rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     .main__top_nav {
     }
