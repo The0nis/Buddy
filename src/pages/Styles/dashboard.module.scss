@@ -1,0 +1,27 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 25rem auto;
+  @media (max-width: 68em) {
+    grid-template-columns: 10rem auto;
+    grid-template-columns: auto;
+  }
+  &__main {
+    padding-left: 3.2rem;
+    padding-right: 2.4rem;
+    background-color: #f5f5f5;
+
+    @media (max-width: 68em) {
+      margin-left: 10rem;
+    }
+    .main__top_nav {
+    }
+
+    .main__content_area {
+      display: flex;
+
+      @media (max-width: 68em) {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,12 +1,16 @@
-body {
-  background-color: #e6e6e7;
-}
-.container {
-  width: 20rem;
+.sidenav_container {
   color: white;
-  background-color: #f1f1f2;
-  height: 100vh;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // padding: 0 2.4rem;
+
+  @media (max-width: 68em) {
+    // padding: 0 1rem;
+    position: fixed;
+    height: 100vh;
+    background-color: #fff;
+  }
 }
 
 .buddylogo {
@@ -16,6 +20,23 @@ body {
   align-content: center;
   margin-top: 2rem;
   // padding-bottom: 30rem;
+  img {
+    @media (max-width: 68em) {
+      width: 5rem;
+      // background-color: #ff8600;
+    }
+  }
+}
+
+.topnav {
+}
+
+.navlinks {
+  @media (max-width: 68em) {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .nav1 {
@@ -33,6 +54,12 @@ body {
 .nav li {
   padding-bottom: 40px;
   list-style-type: none;
+
+  a {
+    @media (max-width: 68em) {
+      display: none;
+    }
+  }
 }
 
 /* unvisited link */
@@ -58,34 +85,76 @@ body {
 .navsidefooter {
   background-color: white;
   display: flex;
+  margin: 2.4rem;
   position: relative;
-  width: calc(100% - 3rem);
   justify-content: center;
-  margin-left: 1.5rem;
-  padding-bottom: 2rem;
+  padding: 1.6rem;
+  box-shadow: 0px 11px 56px rgba(0, 0, 0, 0.07);
+  margin-bottom: 3.2rem;
+  border-radius: 16px;
+
+  @media (max-width: 68em) {
+    // box-shadow: none;
+    // margin: 0;
+    // position: absolute;
+  }
+}
+
+.navwrapper {
+  display: grid;
+  justify-content: center;
+  @media (max-width: 68em) {
+    box-shadow: none;
+    margin: 0;
+    position: absolute;
+    img {
+      row-gap: 1rem;
+      width: 70%;
+    }
+  }
 }
 
 .navwrapper > h1 {
   color: black;
   font-size: smaller;
+  @media (max-width: 68em) {
+    display: none;
+  }
 }
 
 .navwrapper > p {
   text-align: center;
   color: grey;
-  padding-bottom: 12px;
+  padding-bottom: 1.2rem;
+  @media (max-width: 68em) {
+    display: none;
+  }
 }
 
 .navbtn {
   background-color: rgba(255, 134, 0, 0.16);
-  color: #ff8600;
   border: none;
-  padding: 0.8rem 5.1rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 2.4rem;
-  margin: 0;
+  // margin: 0;
   border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  column-gap: 0.7rem;
+
+  @media (max-width: 68em) {
+    padding: 1rem;
+  }
+  p {
+    color: #ff8600;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+
+    @media (max-width: 68em) {
+      display: none;
+    }
+  }
 }
 
 .navimage {
