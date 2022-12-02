@@ -13,28 +13,34 @@
     .navbar {
       position: relative;
       z-index: 100;
-      position: fixed;
+      // position: fixed;
+
+      @media (max-width: 68em) {
+        position: fixed;
+      }
     }
 
-    .hide {
-      transform: translateX(-120px);
-      transition: all 1s ease;
-    }
+    @media (max-width: 68em) {
+      .hide {
+        transform: translateX(-120px);
+        transition: all 1s ease;
+      }
 
-    .show {
-      transform: translateX(0px);
-      transition: all 1s ease;
-    }
+      .show {
+        transform: translateX(0px);
+        transition: all 1s ease;
+      }
 
-    .toggle {
-      position: absolute;
-      top: 13px;
-      left: 110px;
-    }
+      .toggle {
+        position: absolute;
+        top: 13px;
+        left: 110px;
+      }
 
-    .toggle_position {
-      top: 10px;
-      left: 20px;
+      .toggle_position {
+        top: 10px;
+        left: 20px;
+      }
     }
   }
 
