@@ -1,40 +1,53 @@
 .dashboard {
   display: grid;
   grid-template-columns: 25rem auto;
+  // height: 100vh;
+
   @media (max-width: 68em) {
     display: block;
     grid-template-columns: 10rem auto;
     grid-template-columns: auto;
+    height: inherit;
   }
 
   &__sidenav {
-    // display: none;
-    // transform: translate(-50px);
     .navbar {
       position: relative;
       z-index: 100;
-      position: fixed;
-    }
+      // position: fixed;
+      height: 100%;
 
-    .hide {
-      transform: translateX(-120px);
-      transition: all 1s ease;
-    }
-
-    .show {
-      transform: translateX(0px);
-      transition: all 1s ease;
+      @media (max-width: 68em) {
+        position: fixed;
+      }
     }
 
     .toggle {
-      position: absolute;
-      top: 13px;
-      left: 110px;
+      display: none;
     }
 
-    .toggle_position {
-      top: 10px;
-      left: 20px;
+    @media (max-width: 68em) {
+      .hide {
+        transform: translateX(-120px);
+        transition: all 1s ease;
+      }
+
+      .show {
+        transform: translateX(0px);
+        transition: all 1s ease;
+      }
+
+      .toggle {
+        position: absolute;
+        top: 13px;
+        display: block;
+        left: 110px;
+      }
+
+      .toggle_position {
+        top: 10px;
+        left: 20px;
+      }
     }
   }
 
